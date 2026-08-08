@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>Rahaman Biriyani Spot — Menu</title>
+<meta name="description" content="Rahaman Biriyani Spot, Maduravoyal, Chennai — full menu. 100% Halal. Order via WhatsApp or call." />
+<meta name="theme-color" content="#14100c" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍛</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <span class="brand__mark">B</span>
+        <span class="brand__name">Rahaman Biriyani Spot</span>
+      </div>
+      <div class="topbar__actions">
+        <a class="iconbtn iconbtn--call" href="tel:+916374060747" aria-label="Call restaurant">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call
+        </a>
+        <a class="iconbtn iconbtn--wa" href="https://wa.me/916374060747" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.12h.01a8.94 8.94 0 0 0 6.54-15.52ZM12.06 19.4a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.8.97.94-2.7-.18-.28a7.44 7.44 0 1 1 13.8-3.95 7.4 7.4 0 0 1-7.71 7.16Zm4.08-5.56c-.22-.11-1.31-.65-1.52-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.17-.48.06a6.1 6.1 0 0 1-1.8-1.11 6.7 6.7 0 0 1-1.24-1.54c-.13-.22 0-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.79.77-.79 1.87s.81 2.17.92 2.32c.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.14 1.42.09.43-.07 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.05-.1-.2-.16-.42-.27Z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Swipeable menu-card viewer ===== -->
+  <section class="viewer">
+    <div class="viewer__frame">
+      <button class="navbtn navbtn--prev" id="prevBtn" aria-label="Previous page">▲</button>
+      <div class="viewer__track" id="track">
+        <div class="page"><img src="images/menu-01.jpg" alt="Menu page 1 — Rahaman Biriyani Spot cover" loading="eager" /></div>
+        <div class="page"><img src="images/menu-02.jpg" alt="Menu page 2 — Combo Offers" loading="lazy" /></div>
+        <div class="page"><img src="images/menu-03.jpg" alt="Menu page 3 — Egg Items, Salad, Beverages, Falooda" loading="lazy" /></div>
+        <div class="page"><img src="images/menu-04.jpg" alt="Menu page 4 — Non-Veg &amp; Veg Rice/Noodles, Sea Foods, Mutton" loading="lazy" /></div>
+        <div class="page"><img src="images/menu-05.jpg" alt="Menu page 5 — Veg Gravy, Veg Starters, Grilled, Barbeque, Kaadai" loading="lazy" /></div>
+        <div class="page"><img src="images/menu-06.jpg" alt="Menu page 6 — Chicken, Tandoori Starters, Bread" loading="lazy" /></div>
+        <div class="page"><img src="images/menu-07.jpg" alt="Menu page 7 — Biriyani, Soups, Bucket Biriyani" loading="lazy" /></div>
+      </div>
+      <button class="navbtn navbtn--next" id="nextBtn" aria-label="Next page">▼</button>
+    </div>
+
+    <div class="viewer__meta">
+      <span class="viewer__counter"><span id="pageNum">1</span> / 7</span>
+      <span class="viewer__label" id="pageLabel">Cover</span>
+    </div>
+
+    <div class="dots" id="dots"></div>
+    <p class="hint">Swipe up/down or tap the arrows to browse · Tap a page to zoom</p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">B</span>
+        <div>
+          <div class="footer__name">Rahaman Biriyani Spot</div>
+          <div class="footer__tag">100% Halal · A/C Dining · Home Delivery</div>
+        </div>
+      </div>
+
+      <div class="footer__grid">
+        <div>
+          <h3>Visit / Order</h3>
+          <p>#123/1A1B Mettukuppam Main Road,<br/>Maduravoyal - 600 095</p>
+          <p class="muted">Near EB Office</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a href="tel:+916374060747">63740 60747</a></p>
+          <p class="muted">Fast home delivery</p>
+        </div>
+        <div>
+          <h3>Delivery Partners</h3>
+          <div class="partner-badges">
+            <span class="partner-badge partner-badge--swiggy">Swiggy</span>
+            <span class="partner-badge partner-badge--zomato">Zomato</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__cta">
+        <a class="btn btn--wa" href="https://wa.me/916374060747" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn btn--outline" href="tel:+916374060747">Call to Order</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab-group">
+    <a class="fab fab--wa" href="https://wa.me/916374060747" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.9 8.9 0 0 0 4.35 1.12h.01a8.94 8.94 0 0 0 6.54-15.52ZM12.06 19.4a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.8.97.94-2.7-.18-.28a7.44 7.44 0 1 1 13.8-3.95 7.4 7.4 0 0 1-7.71 7.16Zm4.08-5.56c-.22-.11-1.31-.65-1.52-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.17-.48.06a6.1 6.1 0 0 1-1.8-1.11 6.7 6.7 0 0 1-1.24-1.54c-.13-.22 0-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.79.77-.79 1.87s.81 2.17.92 2.32c.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.14 1.42.09.43-.07 1.31-.54 1.5-1.06.18-.52.18-.96.13-1.06-.05-.1-.2-.16-.42-.27Z"/></svg>
+    </a>
+    <a class="fab fab--call" href="tel:+916374060747" aria-label="Call restaurant">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </div>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+    <img id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
